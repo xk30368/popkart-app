@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "customicons"; /* Project id 2878519 */
+  src:url('/static/customicons.ttf') format('truetype');
+}
+
+.customicons {
+  font-family: "customicons" !important;
+}
+
+.youxi:before {
+  content: "\e60e";
+}
+
+.wenjian:before {
+  content: "\e60f";
+}
+
+.zhuanfa:before {
+  content: "\e610";
+}
+
+page {
+	background-color: #4cdc9b;
+	background-image: radial-gradient(closest-side, rgba(39, 117, 182, 1), rgba(39, 117, 182, 0)),
+	radial-gradient(closest-side, rgba(60, 135, 190, 1), rgba(60, 135, 190, 0)),
+	radial-gradient(closest-side, rgba(84, 153, 196, 1), rgba(84, 153, 196, 0)),
+	radial-gradient(closest-side, rgba(110, 171, 202, 1), rgba(110, 171, 202, 0)),
+	radial-gradient(closest-side, rgb(76, 171, 211), rgba(138, 188, 209, 0));
+	background-size: 130vmax 130vmax,
+	80vmax 80vmax,
+	90vmax 90vmax,
+	110vmax 110vmax,
+	90vmax 90vmax;
+	background-position: -80vmax -80vmax,
+	60vmax -30vmax,
+	10vmax 10vmax,
+	-30vmax -10vmax,
+	50vmax 50vmax;
+	background-repeat: no-repeat;
+	animation: 10s movement linear infinite;
+}
+
+@keyframes movement {
+  0%, 100% {
+    background-size:
+            130vmax 130vmax,
+            80vmax 80vmax,
+            90vmax 90vmax,
+            110vmax 110vmax,
+            90vmax 90vmax;
+    background-position:
+              -80vmax -80vmax,
+              60vmax -30vmax,
+              10vmax 10vmax,
+              -30vmax -10vmax,
+              50vmax 50vmax;
+  }
+
+  25% {
+    background-size:
+            100vmax 100vmax,
+            90vmax 90vmax,
+            100vmax 100vmax,
+            90vmax 90vmax,
+            60vmax 60vmax;
+    background-position:
+              -60vmax -90vmax,
+              50vmax -40vmax,
+              0vmax -20vmax,
+              -40vmax 20vmax,
+              40vmax 60vmax;
+  }
+
+  50% {
+    background-size:
+            80vmax 80vmax,
+            110vmax 110vmax,
+            80vmax 80vmax,
+            60vmax 60vmax,
+            80vmax 80vmax;
+    background-position:
+              -50vmax -70vmax,
+              40vmax -30vmax,
+              10vmax 0vmax,
+              20vmax 10vmax,
+              30vmax 70vmax;
+  }
+
+  70% {
+    background-size:
+            90vmax 90vmax,
+            90vmax 90vmax,
+            100vmax 100vmax,
+            90vmax 90vmax,
+            70vmax 70vmax;
+    background-position:
+              -50vmax -40vmax,
+              50vmax -30vmax,
+              20vmax 0vmax,
+              -10vmax 10vmax,
+              40vmax 60vmax;
+  }
+}
